@@ -1,0 +1,29 @@
+.main-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.container-about {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.text-wrapper {
+  margin: 20px 80px 20px 80px;
+}
+.about-us h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.about-us h2 {
+  padding-bottom: 20px;
+}
+
+.about-us h1:hover {
+  text-decoration: underline;
+  transition: 0.4s;
+  text-shadow: 0 0 3px rgb(67, 236, 255);
+}
+footer {
+  margin-top: 50px;
+}

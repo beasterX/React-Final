@@ -1,0 +1,214 @@
+.main h1 {
+  padding: 20px 80px 20px 80px;
+  background-color: #232323;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.main {
+  max-width: 100%;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+.main h1:hover {
+  transition: 0.4s;
+  text-shadow: 0 0 3px rgb(67, 208, 255);
+}
+.shop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.clear {
+  margin: 20px;
+  padding: 15px;
+}
+.checkout {
+  margin: 20px;
+  padding: 15px;
+}
+.cart {
+  color: black;
+}
+.container {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.container .card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1bbfe9;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container .card .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  width: 100%;
+  height: 50%;
+  transition: 0.5s;
+}
+
+.container .card:hover .imgBx {
+  top: 0%;
+  transform: translateY(-25%);
+}
+
+.container .card .imgBx img {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 260px;
+}
+
+.container .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 90;
+}
+
+.container .card:hover .contentBx {
+  height: 230px;
+}
+
+.container .card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.container .card .contentBx .size,
+.container .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container .card:hover .contentBx .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.container .card:hover .contentBx .color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.container .card .contentBx .size h3,
+.container .card .contentBx .color h3 {
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.container .card .contentBx .size span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container .card .contentBx .size button:hover {
+  background: #b90000;
+}
+
+.container .card .contentBx .color span {
+  color: white;
+  width: 50px;
+  height: 25px;
+  margin: 0 2px;
+  border-radius: 30px;
+  padding-top: 2px;
+  cursor: pointer;
+}
+
+.container .card .contentBx .color span:hover {
+  text-shadow: 0 0 3px white;
+}
+
+.container .card .contentBx .color span:nth-child(2) {
+  background: #ffffff00;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+.container .card .contentBx .color span:nth-child(2):hover {
+  border-color: white;
+}
+.container .card .contentBx .color span:nth-child(3) {
+  background: #1b2fe9;
+}
+
+.container .card .contentBx .color span:nth-child(4) {
+  background: #080481;
+}
+
+.container .card .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+
+.container .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.7s;
+}
